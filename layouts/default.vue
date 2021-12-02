@@ -13,7 +13,7 @@
               </h1>
               <v-btn
                 color="primary"
-                href="https://github.com/Ghost0159/Ghost-Eshop-Alternative-3ds/releases"
+                href="https://cdn.ghosteshop.com/Homebrew/GhostEshop.cia"
                 >{{ $t('download') }} !</v-btn
               >
             </v-col>
