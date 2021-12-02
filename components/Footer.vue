@@ -9,12 +9,12 @@
       <v-card-text>
         <v-btn
           class="mx-4 white--text"
-          href="https://github.com/Ghost0159/Ghost-Eshop-Alternative-3ds"
+          href="https://github.com/ghost-land"
           icon
         >
           <v-icon size="24px"> mdi-github </v-icon>
         </v-btn>
-        <v-btn class="mx-4 white--text" href="https://discord.gg/FPDUSaA" icon>
+        <v-btn class="mx-4 white--text" href="https://discord.gg/a7vdfT6YPq" icon>
           <v-icon size="24px"> mdi-discord </v-icon>
         </v-btn>
       </v-card-text>

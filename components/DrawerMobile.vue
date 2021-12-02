@@ -6,7 +6,7 @@
   >
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title class="title"> Ghost Eshop </v-list-item-title>
+        <v-list-item-title class="title"> Ghost eShop </v-list-item-title>
       </v-list-item-content>
     </v-list-item>
 
