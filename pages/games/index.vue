@@ -151,26 +151,13 @@ export default {
   },
   methods: {
     selectGameBtn(item) {
-      console.log(item)
-      const versions = item.info.version.split(', ')
       this.downloadLinks = []
-      if (versions.length === 1) {
-        for (const i in item.info.version.split(', ')) {
-          if (i !== 'info') {
-            this.downloadLinks.push({
-              name: `${item.info.title} ${item.info.version.split(', ')[i]}`,
-              downloadLink: item[`${item.info.title}`].script[0].file,
-            })
-          }
-        }
-      } else {
-        for (const i in item.info.version.split(', ')) {
-          if (i !== 'info') {
-            this.downloadLinks.push({
-              name: `${item.info.title} ${item.info.version.split(', ')[i]}`,
-              downloadLink: item[`${item.info.title} (${item.info.version.split(', ')[i]})`].script[0].file,
-            })
-          }
+      for (const i in item) {
+        if (i !== "info") {
+          this.downloadLinks.push({
+            name: i,
+            downloadLink: item[i].script[0].file,
+          })
         }
       }
       this.selectGame = item
