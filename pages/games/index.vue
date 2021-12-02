@@ -22,6 +22,19 @@
     </v-card>
     <v-dialog v-if="selectGame" v-model="dialogGame" width="800">
       <v-card outlined>
+        <v-carousel
+          v-if="selectGame.info.screenshots"
+          :continuous="false"
+          :show-arrows="false"
+          delimiter-icon="mdi-minus"
+          height="300"
+        >
+          <v-carousel-item
+            v-for="(item, i) in selectGame.info.screenshots"
+            :key="i"
+            :src="item.url"
+          ></v-carousel-item>
+        </v-carousel>
         <v-card-title>
           {{ selectGame.info.title }}
         </v-card-title>
@@ -101,25 +114,6 @@ export default {
   components: {
     QrcodeVue,
   },
-  async fetch() {
-    const gamesResponse = await this.$axios.$get(
-      `https://raw.githubusercontent.com/ghost-land/ghost-land.github.io/main/ghosteshop.json`
-    )
-    this.games = gamesResponse
-    this.headers = [
-      {
-        text: this.$t('games.title'),
-        align: 'start',
-        value: 'info.title',
-      },
-      { text: 'Description', value: 'info.description' },
-      { text: 'Version', value: 'info.version' },
-      { text: this.$t('games.author'), value: 'info.author' },
-      { text: this.$t('games.size'), value: 'info.sizes' },
-      { text: this.$t('games.category'), value: 'info.category' },
-      { text: 'Console', value: 'info.console' },
-    ]
-  },
   asyncData() {
     return new Promise((resolve) => {
       // eslint-disable-next-line nuxt/no-timing-in-fetch-data
@@ -139,6 +133,25 @@ export default {
       tabGame: null,
       QRCodeURL: null,
     }
+  },
+  async fetch() {
+    const gamesResponse = await this.$axios.$get(
+      `https://raw.githubusercontent.com/ghost-land/ghost-land.github.io/main/ghosteshop.json`
+    )
+    this.games = gamesResponse
+    this.headers = [
+      {
+        text: this.$t('games.title'),
+        align: 'start',
+        value: 'info.title',
+      },
+      { text: 'Description', value: 'info.description' },
+      { text: 'Version', value: 'info.version' },
+      { text: this.$t('games.author'), value: 'info.author' },
+      { text: this.$t('games.size'), value: 'info.sizes' },
+      { text: this.$t('games.category'), value: 'info.category' },
+      { text: 'Console', value: 'info.console' },
+    ]
   },
   watch: {
     tabGame(index, item) {
@@ -170,5 +183,10 @@ export default {
 <style scopped>
 .qrcode canvas {
   border: 15px solid #ffffff;
+}
+
+
+.v-window-item .v-image__image.v-image__image--cover {
+  background-size: contain;
 }
 </style>

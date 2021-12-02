@@ -32,7 +32,7 @@
         </v-list-item-content>
       </v-list-item>
       <v-list-group>
-        <template v-slot:activator>
+        <template #activator>
           <v-list-item-content>
             <v-list-item-title>Languages</v-list-item-title>
           </v-list-item-content>
