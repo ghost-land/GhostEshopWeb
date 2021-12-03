@@ -1,7 +1,7 @@
 <template>
   <v-app-bar v-if="$vuetify.breakpoint.mobile" app color="white">
     <v-app-bar-nav-icon @click.stop="$store.commit('setDrawerMobile', true)" />
-    <v-toolbar-title class="font-weight-black">Ghost Eshop</v-toolbar-title>
+    <v-toolbar-title class="font-weight-black">Ghost eShop</v-toolbar-title>
   </v-app-bar>
 </template>
 
