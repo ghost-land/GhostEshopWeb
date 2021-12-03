@@ -1,6 +1,6 @@
 <template>
   <v-app-bar v-if="!$vuetify.breakpoint.mobile" app color="white">
-    <v-toolbar-title class="font-weight-black">Ghost Eshop</v-toolbar-title>
+    <v-toolbar-title class="font-weight-black">Ghost eShop</v-toolbar-title>
 
     <v-btn
       nuxt
