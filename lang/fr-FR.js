@@ -15,7 +15,7 @@ export default {
     size: 'Taille',
   },
   header: {
-    home: 'Acceuil',
+    home: 'Accueil',
     games: 'Jeux',
   },
   footer: {
