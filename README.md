@@ -67,3 +67,8 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+
+[![Discord](https://discordapp.com/api/guilds/633965704424718336/widget.png?style=banner3&time)](https://discord.gg/9Rqvh9F)
+
+<a href="https://github.com/ghost-land" style="padding-left: 5px; padding-right: 5px;"><img src="https://img.shields.io/badge/&copy;Ghost_eShop_Team-2020_|_2022-red.svg" height="20"></a>
