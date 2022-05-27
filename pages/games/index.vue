@@ -98,6 +98,9 @@
 
         <v-card-actions>
           <v-spacer></v-spacer>
+          <v-btn icon :href="QRCodeURL">
+            <v-icon>mdi-download</v-icon>
+          </v-btn>
           <v-btn color="primary" text @click="dialogGame = false">
             Close
           </v-btn>
