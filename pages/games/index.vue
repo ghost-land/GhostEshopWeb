@@ -15,7 +15,7 @@
         :headers="headers"
         :items="games.storeContent"
         :search="search"
-        :items-per-page="5"
+        :items-per-page="10"
         class="elevation-1"
         @click:row="selectGameBtn"
       ></v-data-table>
@@ -40,30 +40,30 @@
         </v-card-title>
 
         <v-card-text>
-          Description:
+          Description :
           {{
             selectGame.info.description
               ? selectGame.info.description
               : 'Non spécifié'
           }}
           <br />
-          Version:
+          Version :
           {{
             selectGame.info.version ? selectGame.info.version : 'Non spécifié'
           }}
           <br />
-          {{ $t('games.author') }}:
+          {{ $t('games.author') }} :
           {{ selectGame.info.author ? selectGame.info.author : 'Non spécifié'
           }}<br />
-          {{ $t('games.size') }}:
+          {{ $t('games.size') }} :
           {{ selectGame.info.sizes ? selectGame.info.sizes : 'Non spécifié' }}
           <br />
-          {{ $t('games.category') }}:
+          {{ $t('games.category') }} :
           {{
             selectGame.info.category ? selectGame.info.category : 'Non spécifié'
           }}
           <br />
-          Console:
+          Console :
           {{
             selectGame.info.console ? selectGame.info.console : 'Non spécifié'
           }}
@@ -102,7 +102,7 @@
             <v-icon>mdi-download</v-icon>
           </v-btn>
           <v-btn color="primary" text @click="dialogGame = false">
-            Close
+            {{ $t('close') }}
           </v-btn>
         </v-card-actions>
       </v-card>

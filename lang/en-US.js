@@ -17,9 +17,12 @@ export default {
   header: {
     home: 'Home',
     games: 'Games',
+    french: 'French',
+    english: 'English',
   },
   footer: {
     copyright: '© Ghost eShop - All rights reserved',
   },
   download: 'Download',
+  close: 'Close',
 }

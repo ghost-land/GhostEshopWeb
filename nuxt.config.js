@@ -3,8 +3,8 @@ export default {
   ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - GhostEshopWeb',
-    title: 'GhostEshopWeb',
+    titleTemplate: 'Ghost eShop',
+    title: 'Ghost eShop',
     htmlAttrs: {
       lang: 'fr'
     },

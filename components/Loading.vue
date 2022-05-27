@@ -4,7 +4,7 @@
       <v-container fluid class="fill-height">
         <v-row justify="center" align="center">
           <v-col>
-            <h1 class="titleText">GHOST ESHOP</h1>
+            <h1 class="titleText">Ghost eShop</h1>
           </v-col>
         </v-row>
       </v-container>

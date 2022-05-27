@@ -17,9 +17,12 @@ export default {
   header: {
     home: 'Accueil',
     games: 'Jeux',
+    french: 'Français',
+    english: 'Anglais',
   },
   footer: {
     copyright: '© Ghost eShop - Touts droits résérvés',
   },
   download: 'Télécharger',
+  close: 'Fermer',
 }
