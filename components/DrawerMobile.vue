@@ -22,19 +22,28 @@
         "
         :to="localePath('/')"
       >
+        <v-list-item-icon>
+          <v-icon>mdi-home</v-icon>
+        </v-list-item-icon>
         <v-list-item-content>
           <v-list-item-title>{{ $t('header.home') }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
       <v-list-item nuxt :to="localePath('/games')">
+      <v-list-item-icon>
+            <v-icon>mdi-gamepad-variant</v-icon>
+          </v-list-item-icon>
         <v-list-item-content>
           <v-list-item-title>{{ $t('header.games') }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
       <v-list-group>
         <template #activator>
+          <v-list-item-icon>
+          <v-icon>mdi-flag</v-icon>
+        </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title>Languages</v-list-item-title>
+            <v-list-item-title>Language</v-list-item-title>
           </v-list-item-content>
         </template>
 
@@ -58,11 +67,11 @@ export default {
       listLang: null,
       lang: [
         {
-          name: 'French',
+          name: this.$t('header.french'),
           lang: 'fr',
         },
         {
-          name: 'English',
+          name: this.$t('header.english'),
           lang: 'en',
         },
       ],

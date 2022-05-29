@@ -4,22 +4,6 @@
     <HeaderMobile />
     <DrawerMobile />
     <v-main>
-      <v-img class="imgCover" src="/banner.png" height="695">
-        <v-container fluid class="fill-height align-end">
-          <v-row>
-            <v-col class="text-center">
-              <h1 color="white" class="button font-weight-black white--text">
-                STAY ALIVE!
-              </h1>
-              <v-btn
-                color="primary"
-                href="https://cdn.ghosteshop.com/Homebrew/GhostEshop.cia"
-                >{{ $t('download') }} !</v-btn
-              >
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-img>
       <nuxt keep-alive />
     </v-main>
     <Footer />

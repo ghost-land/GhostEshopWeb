@@ -1,5 +1,6 @@
 <template>
   <v-app-bar v-if="!$vuetify.breakpoint.mobile" app color="white">
+    <v-img src="/favicon.ico" max-width="32px" class="mr-1 mb-1"/>
     <v-toolbar-title class="font-weight-black">Ghost eShop</v-toolbar-title>
 
     <v-btn
@@ -42,11 +43,11 @@ export default {
       listLang: null,
       lang: [
         {
-          name: 'French',
+          name: this.$t('header.french'),
           lang: 'fr',
         },
         {
-          name: 'English',
+          name: this.$t('header.english'),
           lang: 'en',
         },
       ],

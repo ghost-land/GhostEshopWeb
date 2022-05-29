@@ -12,11 +12,11 @@ export default {
       listLang: null,
       lang: [
         {
-          name: 'French',
+          name: this.$t('header.french'),
           lang: 'fr',
         },
         {
-          name: 'English',
+          name: this.$t('header.english'),
           lang: 'en',
         },
       ],

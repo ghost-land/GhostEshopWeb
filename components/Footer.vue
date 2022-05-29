@@ -31,8 +31,8 @@
         </v-btn>
       </v-card-text>
 
-      <v-divider></v-divider>
-
+      <v-divider dark></v-divider>
+      
       <v-card-text class="white--text">
         {{ $t('footer.copyright') }}
       </v-card-text>
