@@ -20,7 +20,7 @@
           :search="search"
           :items-per-page="15"
           class="elevation-1"
-          :footer-props="{'items-per-page-options':[15, 30, 50, 100, -1]}">
+          :footer-props="{'items-per-page-options':[15, 30, 50, 100, -1]}"
           @click:row="selectGameBtn"
         ></v-data-table>
       </v-card>
