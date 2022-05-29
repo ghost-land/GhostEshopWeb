@@ -104,6 +104,7 @@
 
           <v-card-actions>
             <v-spacer></v-spacer>
+            <div :v-if="QRsize">{{ $t('games.size') }} : {{ QRsize }}</div>
             <v-btn icon :href="QRCodeURL">
               <v-icon>mdi-download</v-icon>
             </v-btn>
@@ -142,6 +143,7 @@ export default {
       downloadLinks: [],
       tabGame: null,
       QRCodeURL: null,
+      QRsize: null,
     }
   },
   async fetch() {
@@ -167,8 +169,10 @@ export default {
     tabGame(index, item) {
       if (this.downloadLinks[index]) {
         this.QRCodeURL = this.downloadLinks[index].downloadLink
+        this.QRsize = this.downloadLinks[index].downloadSize
       } else {
         this.QRCodeURL = this.downloadLinks[0].downloadLink
+        this.QRsize = this.downloadLinks[0].downloadSize
       }
     },
   },
@@ -180,6 +184,7 @@ export default {
           this.downloadLinks.push({
             name: i,
             downloadLink: item[i].script[0].file,
+            downloadSize: item[i].size,
           })
         }
       }
