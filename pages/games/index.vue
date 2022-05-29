@@ -1,7 +1,8 @@
 <template>
-  <div><br>
-    <h1 style="margin-top:62px; text-align: center;">{{ $t('games.list') }}</h1>
-    <h3 style="text-align:center">{{ $t('games.subtitle') }}</h3>
+  <div>
+    <br />
+    <h1 style="margin-top: 62px; text-align: center">{{ $t('games.list') }}</h1>
+    <h3 style="text-align: center">{{ $t('games.subtitle') }}</h3>
     <v-container>
       <v-card>
         <v-card-title>
@@ -20,7 +21,7 @@
           :search="search"
           :items-per-page="15"
           class="elevation-1"
-          :footer-props="{'items-per-page-options':[15, 30, 50, 100, -1]}"
+          :footer-props="{ 'items-per-page-options': [15, 30, 50, 100, -1] }"
           @click:row="selectGameBtn"
         ></v-data-table>
       </v-card>
@@ -57,10 +58,9 @@
             }}
             <br />
             {{ $t('games.author') }} :
-            {{ selectGame.info.author ? selectGame.info.author : 'Non spécifié'
-            }}<br />
-            {{ $t('games.size') }} :
-            {{ selectGame.info.sizes ? selectGame.info.sizes : 'Non spécifié' }}
+            {{
+              selectGame.info.author ? selectGame.info.author : 'Non spécifié'
+            }}
             <br />
             {{ $t('games.category') }} :
             {{
