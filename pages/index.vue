@@ -56,9 +56,11 @@
               <v-btn icon href="https://discord.gg/a7vdfT6YPq"><v-icon>mdi-discord</v-icon></v-btn>
             </v-card-actions>
           </v-card>
+          <br>
           <v-card>
             <v-card-title>{{ $t('home.title_4') }}</v-card-title>
             <v-card-text>{{ $t('home.paragraphe_4') }}</v-card-text>
+            <v-divider></v-divider>
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn icon :href="localePath('/games')"><v-icon>mdi-gamepad-variant</v-icon></v-btn>
