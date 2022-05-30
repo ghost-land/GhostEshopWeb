@@ -43,6 +43,7 @@
             <v-divider></v-divider>
             <v-card-actions>
               <v-spacer></v-spacer>
+              <v-btn icon href="https://3ds.hacks.guide/"><v-icon>mdi-web</v-icon></v-btn>
               <v-btn icon href="https://cdn.ghosteshop.com/Homebrew/GhostEshop.cia"><v-icon>mdi-download</v-icon></v-btn>
             </v-card-actions>
           </v-card>
