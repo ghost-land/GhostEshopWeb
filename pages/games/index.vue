@@ -142,8 +142,8 @@ export default {
       dialogGame: false,
       downloadLinks: [],
       tabGame: null,
-      QRCodeURL: null,
-      QRsize: null,
+      QRCodeURL: undefined,
+      QRsize: undefined,
     }
   },
   async fetch() {
@@ -179,6 +179,8 @@ export default {
   methods: {
     selectGameBtn(item) {
       this.downloadLinks = []
+      this.QRsize = undefined
+      this.QRCodeURL = undefined
       for (const i in item) {
         if (i !== 'info') {
           this.downloadLinks.push({
@@ -188,6 +190,8 @@ export default {
           })
         }
       }
+      this.QRCodeURL = this.downloadLinks[0].downloadLink
+      this.QRsize = this.downloadLinks[0].downloadSize
       this.selectGame = item
       this.dialogGame = true
     },
