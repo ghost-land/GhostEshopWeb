@@ -24,7 +24,9 @@ export default {
   },
   games: {
     search: 'Rechercher',
+    inputhere: 'Inserez ici',
     title: 'Titre',
+    icon: 'Icone',
     author: 'Auteur',
     category: 'Catégorie',
     size: 'Taille',

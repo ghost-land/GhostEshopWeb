@@ -24,7 +24,9 @@ export default {
   },
   games: {
     search: 'Search',
+    inputhere: 'Input here',
     title: 'Title',
+    icon: 'Icon',
     author: 'Author',
     category: 'Category',
     size: 'Size',

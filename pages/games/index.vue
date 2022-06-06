@@ -5,25 +5,38 @@
     <h3 style="text-align: center">{{ $t('games.subtitle') }}</h3>
     <v-container>
       <v-card>
-        <v-card-title>
+        <v-card-title>{{ $t('games.search') }}
+      <v-spacer></v-spacer>
           <v-text-field
             v-model="search"
             append-icon="mdi-magnify"
-            :label="$t('games.search')"
+            :label="$t('games.inputhere')"
             single-line
             hide-details
           ></v-text-field>
         </v-card-title>
+        <v-progress-linear
+          v-if="$fetchState.pending"
+          indeterminate
+          style="margin:7px"
+          color="primary"
+        ></v-progress-linear>
         <v-data-table
           v-if="!$fetchState.pending"
           :headers="headers"
           :items="games.storeContent"
           :search="search"
           :items-per-page="15"
+          style="cursor:pointer;"
+          loading-text="Loading... Please wait"
           class="elevation-1"
-          :footer-props="{ 'items-per-page-options': [15, 30, 50, 100, -1] }"
+          :footer-props="{ 'items-per-page-options': [15, 30, 50, 100, -1], 'sortBy': 'item.info.title' }"
           @click:row="selectGameBtn"
-        ></v-data-table>
+        >
+          <template v-slot:item.info.icon_url="{ item }">
+            <img :src="item.info.icon_url" />
+          </template>
+        </v-data-table>
       </v-card>
       <v-dialog v-if="selectGame" v-model="dialogGame" width="800">
         <v-card outlined>
@@ -100,9 +113,7 @@
             />
           </v-card>
 
-          <v-divider></v-divider>
-
-          <v-card-actions>
+          <v-footer>
             <v-spacer></v-spacer>
             <div :v-if="QRsize">{{ $t('games.size') }} : {{ QRsize }}</div>
             <v-btn icon :href="QRCodeURL">
@@ -111,7 +122,7 @@
             <v-btn color="primary" text @click="dialogGame = false">
               {{ $t('close') }}
             </v-btn>
-          </v-card-actions>
+          </v-footer>
         </v-card>
       </v-dialog>
     </v-container>
@@ -153,12 +164,16 @@ export default {
     this.games = gamesResponse
     this.headers = [
       {
-        text: this.$t('games.title'),
+        text: this.$t('games.icon'),
         align: 'start',
+        value: 'info.icon_url',
+      },
+      {
+        text: this.$t('games.title'),
         value: 'info.title',
       },
       { text: 'Description', value: 'info.description' },
-      { text: 'Version', value: 'info.version' },
+      { text: 'Version', value: 'info.version', sortable: false },
       { text: this.$t('games.author'), value: 'info.author' },
       { text: this.$t('games.size'), value: 'info.sizes' },
       { text: this.$t('games.category'), value: 'info.category' },
