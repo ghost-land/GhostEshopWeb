@@ -87,6 +87,11 @@
               selectGame.info.console ? selectGame.info.console : 'Non spécifié'
             }}
             <br />
+            {{ $t('games.last_updated') }} :
+            {{
+              selectGame.info.last_updated ? selectGame.info.last_updated : 'Non spécifié'
+            }}
+            <br />
           </v-card-text>
 
           <v-tabs

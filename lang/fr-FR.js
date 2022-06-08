@@ -29,6 +29,7 @@ export default {
     icon: 'Icone',
     author: 'Auteur',
     category: 'Catégorie',
+    last_updated: "Dernière mise à jour",
     size: 'Taille',
     list: 'Liste des jeux',
     subtitle: 'Ici, vous pouvez retrouver tout les jeux disponibles sur le Ghost eShop.',
