@@ -64,7 +64,7 @@
             <v-divider></v-divider>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn icon :href="localePath('/games')"><v-icon>mdi-gamepad-variant</v-icon></v-btn>
+              <v-btn nuxt icon :to="localePath('/games')"><v-icon>mdi-gamepad-variant</v-icon></v-btn>
             </v-card-actions>
           </v-card>
         </v-col>

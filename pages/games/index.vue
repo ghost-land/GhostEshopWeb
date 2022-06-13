@@ -42,8 +42,9 @@
         <v-card outlined>
           <v-carousel
             v-if="selectGame.info.screenshots"
-            :continuous="false"
+            :continuous="true"
             :show-arrows="false"
+            cycle
             delimiter-icon="mdi-minus"
             height="300"
           >
@@ -62,34 +63,34 @@
             {{
               selectGame.info.description
                 ? selectGame.info.description
-                : 'Non spécifié'
+                : $t('games.notspecified')
             }}
             <br />
             Version :
             {{
-              selectGame.info.version ? selectGame.info.version : 'Non spécifié'
+              selectGame.info.version ? selectGame.info.version : $t('games.notspecified')
             }}
             <br />
             {{ $t('games.author') }} :
             {{
-              selectGame.info.author ? selectGame.info.author : 'Non spécifié'
+              selectGame.info.author ? selectGame.info.author : $t('games.notspecified')
             }}
             <br />
             {{ $t('games.category') }} :
             {{
               selectGame.info.category
                 ? selectGame.info.category
-                : 'Non spécifié'
+                : $t('games.notspecified')
             }}
             <br />
             Console :
             {{
-              selectGame.info.console ? selectGame.info.console : 'Non spécifié'
+              selectGame.info.console ? selectGame.info.console : $t('games.notspecified')
             }}
             <br />
             {{ $t('games.last_updated') }} :
             {{
-              selectGame.info.last_updated ? selectGame.info.last_updated : 'Non spécifié'
+              selectGame.info.last_updated ? selectGame.info.last_updated : $t('games.notspecified')
             }}
             <br />
           </v-card-text>
@@ -172,15 +173,15 @@ export default {
         text: this.$t('games.icon'),
         align: 'start',
         value: 'info.icon_url',
+        sortable: false
       },
       {
         text: this.$t('games.title'),
         value: 'info.title',
       },
-      { text: 'Description', value: 'info.description' },
+      { text: 'Description', value: 'info.description', sortable: false },
       { text: 'Version', value: 'info.version', sortable: false },
       { text: this.$t('games.author'), value: 'info.author' },
-      { text: this.$t('games.size'), value: 'info.sizes' },
       { text: this.$t('games.category'), value: 'info.category' },
       { text: 'Console', value: 'info.console' },
     ]

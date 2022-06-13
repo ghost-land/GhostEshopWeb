@@ -20,7 +20,7 @@ export default {
 
 <style scoped>
 .imgCover {
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 .v-main {

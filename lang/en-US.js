@@ -33,6 +33,7 @@ export default {
     size: 'Size',
     list: 'Games list',
     subtitle: 'Here, you can find all the games available on the Ghost eShop.',
+    notspecified: 'Not specified',
   },
   header: {
     home: 'Home',
