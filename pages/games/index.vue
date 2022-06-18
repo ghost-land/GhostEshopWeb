@@ -45,6 +45,7 @@
             :continuous="true"
             :show-arrows="false"
             cycle
+            show-arrows-on-hover
             delimiter-icon="mdi-minus"
             height="300"
           >

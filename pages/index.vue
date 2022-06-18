@@ -54,7 +54,7 @@
             <v-divider></v-divider>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn icon href="https://discord.gg/a7vdfT6YPq"><v-icon>mdi-discord</v-icon></v-btn>
+              <v-btn icon target="_blank" href="https://forms.gle/oeExF7qWyDTjwSfe9"><v-icon>mdi-file-document-multiple</v-icon></v-btn>
             </v-card-actions>
           </v-card>
           <br>

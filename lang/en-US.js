@@ -15,7 +15,7 @@ export default {
     title_3:
       "What if a game is not available on the Ghost eShop ?",
       paragraphe_3:
-        "If a game is not present on the Ghost eShop, you can request its addition via the official Discord server.",
+        "If a game is not present on the Ghost eShop, you can request its addition via the form available below.",
     title_4:
       "Is it possible to download games without the 3ds application?",
       paragraphe_4:
@@ -38,6 +38,7 @@ export default {
   header: {
     home: 'Home',
     games: 'Games',
+    request: 'Request a game',
     french: 'French',
     english: 'English',
   },

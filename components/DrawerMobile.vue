@@ -37,6 +37,14 @@
           <v-list-item-title>{{ $t('header.games') }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
+      <v-list-item nuxt href="https://forms.gle/oeExF7qWyDTjwSfe9">
+        <v-list-item-icon>
+            <v-icon>mdi-file-document-multiple</v-icon>
+          </v-list-item-icon>
+        <v-list-item-content>
+          <v-list-item-title>{{ $t('header.request') }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
       <v-list-group>
         <template #activator>
           <v-list-item-icon>

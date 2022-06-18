@@ -15,6 +15,7 @@
       >{{ $t('header.home') }}</v-btn
     >
     <v-btn nuxt :to="localePath('/games')" text>{{ $t('header.games') }}</v-btn>
+    <v-btn nuxt targer="_blank" href="https://forms.gle/oeExF7qWyDTjwSfe9" text>{{ $t('header.request') }}</v-btn>
     <v-spacer></v-spacer>
     <v-menu left bottom>
       <template #activator="{ on, attrs }">

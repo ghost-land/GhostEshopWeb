@@ -15,7 +15,7 @@ export default {
     title_3:
       "Que faire si un jeu n'est pas disponible sur le Ghost eShop ?",
       paragraphe_3:
-        "Si un jeu n'est pas présent sur le Ghost eShop, vous pouvez demander son ajout via le serveur Discord officiel.",
+        "Si un jeu n'est pas présent sur le Ghost eShop, vous pouvez demander son ajout via le formulaire ci-dessous.",
     title_4:
       "Est-ce possible de télécharger des jeux sans l'application 3ds ?",
       paragraphe_4:
@@ -38,8 +38,9 @@ export default {
   header: {
     home: 'Accueil',
     games: 'Jeux',
+    request: 'Demander un jeu',
     french: 'Français',
-    english: 'Anglais',
+    english: 'Anglais',    
   },
   footer: {
     copyright: '© Ghost eShop - Touts droits résérvés',
