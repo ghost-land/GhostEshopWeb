@@ -180,11 +180,11 @@ export default {
         text: this.$t('games.title'),
         value: 'info.title',
       },
-      { text: 'Description', value: 'info.description', sortable: false },
-      { text: 'Version', value: 'info.version', sortable: false },
+      { text: this.$t('games.description'), value: 'info.description', sortable: false },
+      { text: this.$t('games.version'), value: 'info.version', sortable: false },
       { text: this.$t('games.author'), value: 'info.author' },
       { text: this.$t('games.category'), value: 'info.category' },
-      { text: 'Console', value: 'info.console' },
+      { text: this.$t('games.console'), value: 'info.console' },
     ]
   },
   watch: {
