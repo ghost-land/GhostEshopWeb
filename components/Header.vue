@@ -1,12 +1,17 @@
 <template>
   <v-app-bar v-if="!$vuetify.breakpoint.mobile" app color="white">
-    <v-img src="/favicon.ico" max-width="32px" class="mr-1 mb-1"/>
+    <v-img src="/favicon.ico" max-width="32px" class="mr-1 mb-1" />
     <v-toolbar-title class="font-weight-black">Ghost eShop</v-toolbar-title>
 
     <v-btn
       nuxt
       :active-class="
-        $route.fullPath === '/fr/games' || $route.fullPath === '/fr/games/'
+        $route.fullPath === '/fr/games' ||
+        $route.fullPath === '/fr/games/' ||
+        $route.fullPath === '/jp/games' ||
+        $route.fullPath === '/jp/games/' ||
+        $route.fullPath === '/es/games' ||
+        $route.fullPath === '/es/games/'
           ? 'noActive'
           : ''
       "
@@ -15,7 +20,13 @@
       >{{ $t('header.home') }}</v-btn
     >
     <v-btn nuxt :to="localePath('/games')" text>{{ $t('header.games') }}</v-btn>
-    <v-btn nuxt targer="_blank" href="https://forms.gle/oeExF7qWyDTjwSfe9" text>{{ $t('header.request') }}</v-btn>
+    <v-btn
+      nuxt
+      targer="_blank"
+      href="https://forms.gle/oeExF7qWyDTjwSfe9"
+      text
+      >{{ $t('header.request') }}</v-btn
+    >
     <v-spacer></v-spacer>
     <v-menu left bottom>
       <template #activator="{ on, attrs }">
