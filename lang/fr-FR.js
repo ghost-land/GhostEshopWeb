@@ -5,13 +5,13 @@ export default {
         "Ghost eShop est une énorme base de données de jeux de la famille Nintendo 3ds. Avec Ghost eShop, votre console n'est jamais obsolète ! Vous pouvez ainsi télécharger vos jeux favoris depuis ce site ou l'application pour console.",
     title_2: 'Quels sont les prérequis pour installer Ghost eShop ?',
       paragraphe_2:
-        "Le Ghost eShop est complet mais nécessite quelques prérequis :",
+        'Le Ghost eShop est complet mais nécessite quelques prérequis :',
         paragraphe_2_1:
-          "- Une console de la famille 3ds avec un custom firmware (Luma3DS, ...) installé",
+          '- Une console de la famille 3ds avec un custom firmware (Luma3DS, ...) installé',
         paragraphe_2_2:
           "- Une carte SD avec 10mb (au minimum) d'espace libre",
         paragraphe_2_3:
-          "- La derniere version de Ghost eShop disponible si dessous",
+          '- La derniere version de Ghost eShop disponible si dessous',
     title_3:
       "Que faire si un jeu n'est pas disponible sur le Ghost eShop ?",
       paragraphe_3:
