@@ -49,7 +49,7 @@ export default {
     japanese: 'Japonais',
   },
   footer: {
-    copyright: '© Ghost eShop - Touts droits résérvés',
+    copyright: '© Ghost eShop - Tous droits résérvé',
   },
   download: 'Télécharger',
   close: 'Fermer',
