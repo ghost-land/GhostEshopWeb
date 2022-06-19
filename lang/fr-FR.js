@@ -29,7 +29,7 @@ export default {
     icon: 'Icone',
     author: 'Auteur',
     category: 'Catégorie',
-    last_updated: "Dernière mise à jour",
+    last_updated: 'Dernière mise à jour',
     size: 'Taille',
     list: 'Liste des jeux',
     subtitle: 'Ici, vous pouvez retrouver tout les jeux disponibles sur le Ghost eShop.',
@@ -40,7 +40,8 @@ export default {
     games: 'Jeux',
     request: 'Demander un jeu',
     french: 'Français',
-    english: 'Anglais',    
+    english: 'Anglais',
+    spanish: 'Espagnol',    
   },
   footer: {
     copyright: '© Ghost eShop - Touts droits résérvés',
