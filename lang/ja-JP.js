@@ -33,7 +33,7 @@ export default {
       size: '容量',
       list: 'ゲームリスト',
       subtitle: '現在Ghost eShopにある全てのゲームをご紹介します。',
-      notspecified: '見つかりませんでした,
+      notspecified: '見つかりませんでした',
     },
     header: {
       home: 'ホーム',

@@ -51,6 +51,14 @@ export default {
           name: this.$t('header.french'),
           lang: 'fr',
         },
+        {
+          name: this.$t('header.spanish'),
+          lang: 'es',
+        },
+        {
+          name: this.$t('header.japanese'),
+          lang: 'jp',
+        },
       ],
     }
   },

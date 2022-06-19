@@ -59,6 +59,14 @@ export default {
         code: 'fr',
         file: 'fr-FR.js',
       },
+      {
+        code: 'es',
+        file: 'es-ES.js',
+      },
+      {
+        code: 'jp',
+        file: 'ja-JP.js',
+      },
     ],
     lazy: true,
     langDir: 'lang/',
