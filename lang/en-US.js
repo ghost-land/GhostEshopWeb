@@ -42,6 +42,7 @@ export default {
     french: 'French',
     english: 'English',
     spanish: 'Spanish',
+    japanese: 'Japanese',
   },
   footer: {
     copyright: '© Ghost eShop - All rights reserved',

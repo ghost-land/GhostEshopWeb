@@ -41,7 +41,8 @@ export default {
       request: 'Solicitar un juego',
       french: 'Francés',
       english: 'Inglés',
-      spanish: 'Español',    
+      spanish: 'Español',
+      japanese: 'Japonés', 
     },
     footer: {
       copyright: '© Ghost eShop - Todos los derechos reservados',
