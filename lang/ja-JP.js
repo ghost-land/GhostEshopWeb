@@ -30,7 +30,7 @@ export default {
       author: '作者',
       description: '説明',
       version: 'バージョン',
-      console: '家庭用ゲーム機',
+      console: 'コンソール',
       category: 'カテゴリー',
       last_updated: '最終更新日',
       rowsperpage: '1ページあたりの行数',
