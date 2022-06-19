@@ -2,24 +2,24 @@ export default {
     home: {
       title_1: 'Ghost eShopとは？',
         paragraphe_1:
-          'Ghost eShopは、Nintendo 3dsファミリーのゲームを集めた巨大なデータベースです。ゴーストeショップがあれば、あなたのゲーム機は決して時代遅れにはなりません。このサイトやゲーム機用アプリケーションから、お気に入りのゲームをダウンロードすることができます。',
-      title_2: 'Ghost eShopをインストールするための条件は何ですか？',
+          'Ghost eShopは、Nintendo 3DSのゲームを集めたデータベースです。GhosteShopがあれば、あなたの3DSは決して時代遅れにはなりません。このサイトや3DS用アプリケーションから、ゲームをダウンロードすることができます。',
+      title_2: 'Ghost eShopを3DS(New3DS)にインストールするための条件は何ですか？',
         paragraphe_2:
-          'Ghost eShopは完成していますが、いくつかの前提条件が必要です。',
+          'Ghost eShopは完成していますが、インストールするためにはいくつかの条件があります。',
           paragraphe_2_1:
-            '- カスタムファームウェア（Luma3DS、...）をインストールした3dsファミリーのゲーム機。',
+            '- カスタムファームウェア（Luma3DSなど...）をインストールした3dsやNew3DS',
           paragraphe_2_2:
-            '- 10MB以上の空き容量のあるSDカード',
+            '- 10MB以上の空き容量のあるSDカードやMicroSDカード',
           paragraphe_2_3:
-            '- 以下で入手可能なGhosteShopの最新バージョン',
+            '- 以下でダウンロード可能なGhosteShopの最新バージョン',
       title_3:
-        'Ghost eShopで販売されていないゲームはどうすればいいですか？',
+        'Ghost eShopに無いゲームはどうすればいいですか？',
         paragraphe_3:
-          'Ghost eShopにないゲームは、以下のフォームからリクエストできます。',
+          'Ghost eShopに無いゲームは、以下のフォームからリクエストできます。',
       title_4:
-        '3dsのアプリケーションを使わずにゲームをダウンロードすることは可能ですか？',
+        '3DSのアプリケーションを使わずにゲームをダウンロードすることは可能ですか？',
         paragraphe_4:
-          '3dsアプリケーションを使わずにゲームをダウンロードするには、ゲームのQRコードを読み取る（FBI経由でインストールする場合）ことができますが、当社のウェブサイトから直接ダウンロードすることもできます。',
+          '3DSのGhost eShopを使わずにゲームをダウンロードするには、ゲームのQRコードを読み取る（FBI経由でインストールする場合）ことができますが、この公式ウェブサイトからダウンロードすることもできます。',
       faq:'よくある質問:',
     },
     games: {
@@ -27,25 +27,25 @@ export default {
       inputhere: 'ここに挿入',
       title: 'タイトル',
       icon: 'アイコン',
-      author: '著者名',
+      author: '作者',
       category: 'カテゴリー',
       last_updated: '最終更新日',
-      size: 'サイズ',
+      size: '容量',
       list: 'ゲームリスト',
-      subtitle: 'ゴーストeショップで販売されているすべてのゲームをご紹介します。',
-      notspecified: '特定せず',
+      subtitle: '現在Ghost eShopにある全てのゲームをご紹介します。',
+      notspecified: '見つかりませんでした,
     },
     header: {
       home: 'ホーム',
       games: 'ゲーム',
-      request: 'ゲームのリクエスト',
-      french: 'フレンチ',
-      english: 'イングリッシュ',
-      spanish: 'スパニッシュ',
-      japanese: '日本',
+      request: 'ゲームをリクエスト',
+      french: 'フランス語',
+      english: '英語',
+      spanish: 'スペイン語',
+      japanese: '日本語',
     },
     footer: {
-      copyright: '© Ghost eShop - All rights reserved',
+      copyright: '© Ghost eShop - 全著作権所有',
     },
     download: 'ダウンロード',
     close: 'クローズ',
