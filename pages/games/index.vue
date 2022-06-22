@@ -166,7 +166,7 @@ export default {
   },
   async fetch() {
     const gamesResponse = await this.$axios.$get(
-      `https://raw.githubusercontent.com/ghost-land/ghost-land.github.io/main/ghosteshop.json`
+      `https://ghosteshop.com/dbapi.php`
     )
     this.games = gamesResponse
     this.headers = [
