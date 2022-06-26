@@ -123,7 +123,7 @@
           <v-footer>
             <v-spacer></v-spacer>
             <div :v-if="QRsize">{{ $t('games.size') }} : {{ QRsize }}</div>
-            <v-btn icon :href="QRCodeURL">
+            <v-btn icon :href="QRCodeURL.replace('http', 'https')">
               <v-icon>mdi-download</v-icon>
             </v-btn>
             <v-btn color="primary" text @click="dialogGame = false">
