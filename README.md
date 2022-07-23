@@ -1,6 +1,6 @@
-<img src="static/icon.png" style="display: block; margin-left: auto; margin-right:auto; height:180px;" />
+<p align="center"><img src="static/icon.png" style="height:180px;" /></p>
 
-# GhostEshopWeb
+<h1 align="center">Ghost eShop Website</h1>
 
 This repo is the main website of Ghost eShop project available [here](http://ghosteshop.com).
 
