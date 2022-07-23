@@ -9,10 +9,7 @@ export default {
       lang: 'fr'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'An alternative eShop for 3ds' },
-      { name: 'format-detection', content: 'telephone=no' }
+      
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -39,13 +36,16 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    // PWA
+    '@nuxtjs/pwa',
   ],
 
   // i18n Module
@@ -93,5 +93,30 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  // PWA Configuration: https://go.nuxtjs.dev/config-pwa
+  pwa: {
+    manifest: {
+      name: 'Ghost eShop',
+      lang: 'en',
+      useWebmanifestExtension: false,
+      start_url: '/',
+      theme_color: '#ff8400',
+      display: 'standalone',
+    },
+    meta: {
+      name: 'Ghost eShop',
+      theme_color: '#ff8400',
+      ogTitle: 'Ghost eShop',
+      ogSiteName: 'Ghost eShop',
+      ogImage: 'https://ghosteshop.com/icon.png',
+      ogDescription: 'An alternative eShop for 3ds',
+      mobileApp: true,
+      mobileAppIOS: true,
+      appleStatusBarStyle: 'default',
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    }
   }
 }
