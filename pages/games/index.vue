@@ -181,7 +181,7 @@ export default {
         value: 'info.title',
       },
       { text: this.$t('games.description'), value: 'info.description', sortable: false },
-      { text: this.$t('games.version'), value: 'info.version', sortable: false },
+      { text: this.$t('games.version'), value: 'info.version', sortable: true },
       { text: this.$t('games.author'), value: 'info.author' },
       { text: this.$t('games.category'), value: 'info.category' },
       { text: this.$t('games.console'), value: 'info.console' },
